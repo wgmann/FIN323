@@ -1,0 +1,181 @@
+# --- Deny-all by default ---
+*
+
+# --- allow all directories at every depth
+!**/
+
+# --- allow repo control and config files ---
+!/.gitignore
+!index.md
+!README.md
+!LICENSE
+!LICENSE-CODE
+!.github/
+!_config.yml
+!index.html
+!.env.example
+!pyproject.toml
+!.devcontainer/
+!.devcontainer/devcontainer.json
+!.devcontainer/Dockerfile
+
+# --- allow course tools bundled with the repo
+!src/**
+# but leave out egg-info (machine-specific file created by pip install)
+*.egg-info
+# and leave out python bytecode cache dirs
+__pycache__/
+
+# --- allow public course content ---
+!/Emory_small.png
+!syllabus.pdf
+# !Homework 1/Homework 1.pdf
+# !Homework 1/Homework 1 data.xlsx
+# !Homework 1/HW1 part 1 solution.xlsx
+# !Homework 1/HW1 part 2 solution.xlsx
+# !Homework 2/Homework 2.pdf
+# !Homework 2/Homework 2 data.xlsx
+# !Homework 2/Homework 2 solution.xlsx
+# !Homework 2/Homework 2 solution.ipynb
+# !Homework 3/Homework 3.pdf
+# !Homework 3/Homework 3 data.xlsx
+# !Homework 3/Homework 3 solution.xlsx
+# !Homework 3/Homework 3 solution.ipynb
+# !Homework 4/Homework 4.pdf
+# !Homework 4/Homework 4 data.xlsx
+# !Homework 4/Homework 4 solution.xlsx
+# !Homework 4/Homework 4 solution.ipynb
+# !Homework 5/Homework 5.pdf
+# !Homework 5/Homework 5 data.xlsx
+# !Homework 5/Homework 5 solution.xlsx
+# !Homework 5/Homework 5 solution.ipynb
+# !Exam 1/Fall 2019 midterm 1 questions - with answers.pdf
+# !Exam 1/Fall 2020 quizzes.pdf
+# !Exam 1/Fall 2021 midterm 1 - with answers.pdf
+# !Exam 1/Fall 2022 midterm 1 - with answers.pdf
+# !Exam 1/Fall 2023 midterm 1 - with answers.pdf
+# !Exam 1/Fall 2024 midterm 1 - with answers.pdf
+# !Exam 1/Fall 2025 midterm 1 - with answers.pdf
+# !Exam 1/Fall 2021 midterm 1 - no answers.pdf
+# !Exam 1/Fall 2022 midterm 1 - no answers.pdf
+# !Exam 1/Fall 2023 midterm 1 - no answers.pdf
+# !Exam 1/Fall 2024 midterm 1 - no answers.pdf
+# !Exam 1/Textbook review problems.pdf
+# !Exam 1/Fall 2024 midterm 1 - solution.pdf
+# !Exam 2/2019 and 2020 questions from midterm 2.pdf
+# !Exam 2/Fall 2022 midterm 2.pdf
+# !Exam 2/Fall 2022 midterm 2 - with answers.pdf
+# !Exam 2/Fall 2023 midterm 2.pdf
+# !Exam 2/Fall 2023 midterm 2 - with answers.pdf
+# !Exam 2/textbook review problems - 13th edition.pdf
+# !Exam 2/Fall 2024 midterm 2.pdf
+# !Exam 2/Fall 2024 midterm 2 - with answers.pdf
+# !Exam 2/Fall 2025 midterm 2 - with answers.pdf
+# !Exam 3/2019 and 2020 questions on final exam topics.pdf
+# !Exam 3/2019 and 2020 questions on final exam topics - no answers.pdf
+# !Exam 3/Fall 2022 final exam - with answers.pdf
+# !Exam 3/Fall 2022 final exam - no answers.pdf
+# !Exam 3/Fall 2023 final exam - with answers.pdf
+# !Exam 3/Fall 2023 final exam - no answers.pdf
+# !Exam 3/Fall 2024 final exam - with answers.pdf
+# !Exam 3/Fall 2024 final exam - no answers.pdf
+# !Exam 3/Fall 2025 final exam - with answers.pdf
+# !Module 1/Week 1 - Asset classes/Asset classes.ipynb
+# !Module 1/Week 1 - Asset classes/Asset classes.slides.pdf
+# !Module 1/Week 1 - Asset classes/home_depot_assets.png
+# !Module 1/Week 1 - Asset classes/home_depot_liabilities.png
+# !Module 1/Week 1 - Asset classes/home_depot_equity.png
+# Module 1/Week 1 - Asset classes/Argentina.pdf
+# Module 1/Week 1 - Asset classes/SVB1.pdf
+# Module 1/Week 1 - Asset classes/SVB2.pdf
+# Module 1/Week 1 - Asset classes/Practice problems Tuesday - just questions.pdf
+# Module 1/Week 1 - Asset classes/Practice problems Tuesday - with answers.pdf
+# Module 1/Week 1 - Asset classes/Practice problems Thursday.pdf
+# Module 1/Week 1 - Asset classes/Why There Will Never Be Another Warren Buffett.pdf
+# Module 1/Week 1 - Asset classes/The Superinvestors of Graham-and-Doddsville.pdf
+# Module 1/Week 1 - Asset classes/A conversation with Benjamin Graham.pdf
+# !Module 1/Week 2 - Investment returns, portfolios, and indexes/Investment returns, portfolios, and indexes.ipynb
+# !Module 1/Week 2 - Investment returns, portfolios, and indexes/Investment returns, portfolios, and indexes.slides.pdf
+# !Module 1/Week 2 - Investment returns, portfolios, and indexes/Example from textbook p48.xlsx
+# !Module 1/Week 2 - Investment returns, portfolios, and indexes/Example from textbook p48 - solved.xlsx
+# !Module 1/Week 2 - Investment returns, portfolios, and indexes/Example with AMGN and GILD.xlsx
+# !Module 1/Week 2 - Investment returns, portfolios, and indexes/Example with AMGN and GILD - solved.xlsx
+# !Module 1/Week 2 - Investment returns, portfolios, and indexes/bessembinder 2018.pdf
+# !Module 1/Week 2 - Investment returns, portfolios, and indexes/Index inclusion.pdf
+# !Module 1/Week 2 - Investment returns, portfolios, and indexes/Is The Barclays Agg Index Baloney.pdf
+# !Module 1/Week 2 - Investment returns, portfolios, and indexes/Tuesday practice problems.pdf
+# !Module 1/Week 2 - Investment returns, portfolios, and indexes/Thursday practice problems.pdf
+# !Module 1/Week 2 - Investment returns, portfolios, and indexes/bessembinder_2a_close.png
+# !Module 1/Week 2 - Investment returns, portfolios, and indexes/agg_components_small.png
+# !Module 1/Week 3 - Fund structures/Funds.ipynb
+# !Module 1/Week 3 - Fund structures/Funds.slides.pdf
+# !Module 1/Week 3 - Fund structures/FMAGX example.xlsx
+# !Module 1/Week 3 - Fund structures/The New Threat Facing Active Fund Managers - WSJ.pdf
+# !Module 1/Week 3 - Fund structures/CEF_AUM.png
+# !Module 1/Week 3 - Fund structures/OEF_CEF_AUM.png
+# !Module 1/Week 3 - Fund structures/OEF_CEF_ETF_AUM.png
+# !Module 1/Week 3 - Fund structures/CEF_discount.png
+# !Module 1/Week 3 - Fund structures/issuance_redemption.png
+# !Module 1/Week 3 - Fund structures/HDV_discount.png
+# !Module 1/Week 3 - Fund structures/ETF_bid_ask.png
+# !Module 1/Week 3 - Fund structures/ETF_expense_ratio_objective.png
+# !Module 1/Week 3 - Fund structures/ETF_heartbeat.png
+# !Module 1/Week 3 - Fund structures/ETF_heartbeat_2.png
+# !Module 1/Week 3 - Fund structures/Tuesday practice problems.pdf
+# !Module 1/Week 4 - Evidence on investment performance/Evidence on investment performance.slides.pdf
+# !Module 1/Week 4 - Evidence on investment performance/Evidence on investment performance.ipynb
+# !Module 1/Week 4 - Evidence on investment performance/Malkiel1995_Table1.png
+# !Module 1/Week 4 - Evidence on investment performance/Malkiel1995_Fig1.png
+# !Module 1/Week 4 - Evidence on investment performance/SPIVA_performance_Exh2.png
+# !Module 1/Week 4 - Evidence on investment performance/SPIVA-persistence-2022.png
+# !Module 1/Week 4 - Evidence on investment performance/FT-passive-active.png
+# !Module 1/Week 4 - Evidence on investment performance/SirriTufano1998_Fig1A.png
+# !Module 1/Week 4 - Evidence on investment performance/size_portfolios.xlsx
+# !Module 1/Week 4 - Evidence on investment performance/Fund closures.pdf
+# !Module 1/Week 4 - Evidence on investment performance/Fund incubation.pdf
+# !Module 1/Week 4 - Evidence on investment performance/Jonathan Clements.pdf
+# !Module 1/Week 4 - Evidence on investment performance/Buffett Munger quality.pdf
+# !Module 1/Week 4 - Evidence on investment performance/Papers/Malkiel 1995.pdf
+# !Module 1/Week 4 - Evidence on investment performance/Papers/Berk and Green 2004.pdf
+# !Module 2/Week 6 - Diversification and portfolio optimization/Diversification and portfolio optimization.ipynb
+# !Module 2/Week 6 - Diversification and portfolio optimization/Diversification and portfolio optimization.slides.pdf
+# !Module 2/Week 6 - Diversification and portfolio optimization/Homework 1 example.xlsx
+# !Module 2/Week 6 - Diversification and portfolio optimization/Fig7_6.png
+# !Module 2/Week 6 - Diversification and portfolio optimization/Fig7_10.png
+# !Module 2/Week 6 - Diversification and portfolio optimization/How Booming Leveraged Funds Can Incinerate Your Money.pdf
+# !Module 2/Week 6 - Diversification and portfolio optimization/Why You Should Own Some Gold.pdf
+# !Module 2/Week 6 - Diversification and portfolio optimization/Gold Rally Points to Eroding Faith in Central Banks Worldwide.pdf
+# !Module 2/Week 6 - Diversification and portfolio optimization/Gold Screams Debasement Trade Bonds Say Otherwise.pdf
+# !Module 2/Week 6 - Diversification and portfolio optimization/Gold_prices.pdf
+# !Module 2/Week 8 - CAPM and investment styles/CAPM and investment styles.ipynb
+# !Module 2/Week 8 - CAPM and investment styles/CAPM and investment styles.slides.pdf
+# !Module 2/Week 8 - CAPM and investment styles/Homework 2 example.slides.pdf
+# !Module 2/Week 8 - CAPM and investment styles/Homework 2 example.xlsx
+# !Module 2/Week 8 - CAPM and investment styles/Homework 2 example.ipynb
+# !Module 2/Week 8 - CAPM and investment styles/appraisal ratio explanation.pdf
+# !Module 2/Week 8 - CAPM and investment styles/Value portfolios.xlsx
+# !Module 3/Week 11 - Short sales and dollar-neutral strategies/Short sales and dollar-neutral strategies.ipynb
+# !Module 3/Week 11 - Short sales and dollar-neutral strategies/VMNFX balance sheet.png
+# !Module 3/Week 11 - Short sales and dollar-neutral strategies/VMNFX short sale discussion.png
+# !Module 3/Week 11 - Short sales and dollar-neutral strategies/VMNFX collateral discussion.png
+# !Module 3/Week 11 - Short sales and dollar-neutral strategies/VMNFX neutrality discussion.png
+# !Module 3/Week 11 - Short sales and dollar-neutral strategies/VMNFX performance.png
+# !Module 3/Week 11 - Short sales and dollar-neutral strategies/Short sales and dollar-neutral strategies.slides.pdf
+# !Module 3/Week 11 - Short sales and dollar-neutral strategies/Example with value and growth stocks - completed.xlsx
+# !Module 3/Week 11 - Short sales and dollar-neutral strategies/Example with value and growth stocks.xlsx
+# !Module 3/Week 12 - Factor models/Factor models.ipynb
+# !Module 3/Week 12 - Factor models/Factor models.slides.pdf
+# !Module 3/Week 12 - Factor models/SP500EW.xlsx
+# !Module 3/Week 12 - Factor models/SP500EW - completed.xlsx
+# !Module 3/Week 12 - Factor models/FF_double_sort.png
+# !Module 3/Week 13 - Derivatives/Derivatives.slides.pdf
+# !Module 3/Week 14 - The profitability factor/Profitability.ipynb
+# !Module 3/Week 14 - The profitability factor/Profitability.slides.pdf
+# !Module 3/Week 14 - The profitability factor/Buffetts Alpha - paper.pdf
+# !Module 3/Week 14 - The profitability factor/Profitability.xlsx
+# !Module 3/Week 14 - The profitability factor/Table 1.png
+# !Module 3/Week 14 - The profitability factor/Figure 1.png
+# !Module 3/Week 14 - The profitability factor/optimal.png
+# !Module 3/Week 14 - The profitability factor/Table 4.png
+# !Module 3/Week 14 - The profitability factor/Figure 3B.png
+# !Module 3/Week 14 - The profitability factor/chat.png

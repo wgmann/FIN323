@@ -1,0 +1,26 @@
+{
+  "name": "FIN323",
+  "image": "mcr.microsoft.com/devcontainers/python:3.12",
+  "postCreateCommand": "python -m venv .venv && . .venv/bin/activate && python -m pip install --upgrade pip && pip install -e . && pip install notebook jupyterlab ipykernel",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-toolsai.jupyter",
+        "ms-python.python"
+      ],
+      "settings": {
+        "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+        "python.terminal.activateEnvironment": true,
+        "jupyter.askForKernelRestart": false
+      }
+    }
+  },
+  "secrets": {
+    "WRDS_USERNAME": {
+      "description": "Your WRDS username for accessing financial data"
+    },
+    "FRED_API_KEY": {
+      "description": "Your FRED API key for accessing economic data"
+    }
+  }
+}

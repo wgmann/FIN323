@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fin323"
+version = "0.1.0"
+description = "Course tools for FIN 323 at Emory University"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "pandas",
+    "fredapi",
+    "wrds",
+    "notebook",
+    "nbconvert[webpdf]",
+    "matplotlib",
+    "python-dotenv",
+    "statsmodels",
+    "xmltodict",
+    "requests",
+    "ipython",
+    "pypdf"
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
