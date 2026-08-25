@@ -17,7 +17,6 @@
 !pyproject.toml
 !.devcontainer/
 !.devcontainer/devcontainer.json
-!.devcontainer/Dockerfile
 !.devcontainer/setup.sh
 
 # --- allow course tools bundled with the repo

@@ -9,7 +9,10 @@
         "ms-toolsai.jupyter",
         "ms-toolsai.vscode-jupyter-cell-tags",
         "GitHub.copilot"
-      ]
+      ],
+      "settings": {
+        "python.defaultInterpreterPath": "/usr/local/bin/python"
+      }
     }
   },
   "secrets": {
