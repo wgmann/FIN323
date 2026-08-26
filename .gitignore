@@ -1,7 +1,6 @@
 # --- Deny-all by default ---
 *
-
-# --- allow all directories at every depth
+# --- But allow Git to traverse directories at every depth to find files that are explicitly allowed below
 !**/
 
 # --- allow repo control and config files ---
@@ -10,26 +9,20 @@
 !README.md
 !LICENSE
 !LICENSE-CODE
-!.github/
 !_config.yml
 !index.html
 !.env.example
 !pyproject.toml
-!.devcontainer/
 !.devcontainer/devcontainer.json
 !.devcontainer/Dockerfile
 !.devcontainer/setup.sh
-
-# --- allow course tools bundled with the repo
-!src/**
-# but leave out egg-info (machine-specific file created by pip install)
-*.egg-info
-# and leave out python bytecode cache dirs
-__pycache__/
-
-# --- allow public course content ---
 !/Emory_small.png
+
+# --- allow course code and slides ---
+# The tag below is to facilitate exporting to the course chat system to build embeddings:
+# ARCHIVE_INCLUDE_START
 !syllabus.pdf
+!src/fin323/french_portfolios.py
 !Module 1/Week 1 - Asset classes/Asset classes.ipynb
 !Module 1/Week 1 - Asset classes/Asset classes.slides.pdf
 !Module 1/Week 2 - Investment returns, portfolios, and indexes/Investment returns, portfolios, and indexes.ipynb
@@ -51,3 +44,4 @@ __pycache__/
 !Module 3/Week 13 - Derivatives/Derivatives.slides.pdf
 !Module 3/Week 14 - The profitability factor/Profitability.ipynb
 !Module 3/Week 14 - The profitability factor/Profitability.slides.pdf
+# ARCHIVE_INCLUDE_END
