@@ -21,7 +21,6 @@
 # --- allow course code and slides ---
 # The tag below is to facilitate exporting to the course chat system to build embeddings:
 # ARCHIVE_INCLUDE_START
-!syllabus.pdf
 !src/fin323/french_portfolios.py
 !Module 1/Week 1 - Asset classes/Asset classes.ipynb
 !Module 1/Week 1 - Asset classes/Asset classes.slides.pdf
