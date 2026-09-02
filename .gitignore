@@ -16,6 +16,7 @@
 !.devcontainer/devcontainer.json
 !.devcontainer/Dockerfile
 !.devcontainer/setup.sh
+!.vscode/settings.json
 !/Emory_small.png
 
 # --- allow course code and slides ---
