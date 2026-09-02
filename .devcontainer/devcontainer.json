@@ -1,7 +1,7 @@
 {
   "name": "FIN323",
   "image": "mcr.microsoft.com/devcontainers/python:3.12",
-  "postCreateCommand": ".devcontainer/setup.sh",
+  "postCreateCommand": "pip install -e .",
   "customizations": {
     "vscode": {
       "extensions": [
