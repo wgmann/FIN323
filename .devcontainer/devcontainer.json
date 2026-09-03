@@ -8,7 +8,8 @@
         "ms-python.python",
         "ms-toolsai.jupyter",
         "ms-toolsai.vscode-jupyter-cell-tags",
-        "GitHub.copilot"
+        "GitHub.copilot",
+        "mathematic.vscode-pdf"
       ]
     }
   },
