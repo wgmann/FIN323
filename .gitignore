@@ -1,45 +1,20 @@
-# --- Deny-all by default ---
-*
-# --- But allow Git to traverse directories at every depth to find files that are explicitly allowed below
-!**/
+.DS_Store
+.env
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+*.egg-info/
+build/
 
-# --- allow repo control and config files ---
-!/.gitignore
-!index.md
-!README.md
-!LICENSE
-!LICENSE-CODE
-!_config.yml
-!index.html
-!.env.example
-!pyproject.toml
-!.devcontainer/devcontainer.json
-!.vscode/settings.json
-!/Emory_small.png
+# LaTeX and slide build artifacts
+*.aux
+*.log
+*.nav
+*.out
+*.snm
+*.toc
+*~
 
-# --- allow course code and slides ---
-# The tag below is to facilitate exporting to the course chat system to build embeddings:
-# ARCHIVE_INCLUDE_START
-!src/fin323/french_portfolios.py
-!Module 1/Week 1 - Asset classes/Asset classes.ipynb
-!Module 1/Week 1 - Asset classes/Asset classes.slides.pdf
-!Module 1/Week 2 - Investment returns, portfolios, and indexes/Investment returns, portfolios, and indexes.ipynb
-!Module 1/Week 2 - Investment returns, portfolios, and indexes/Investment returns, portfolios, and indexes.slides.pdf
-!Module 1/Week 3 - Fund structures/Funds.ipynb
-!Module 1/Week 3 - Fund structures/Funds.slides.pdf
-!Module 1/Week 4 - Evidence on investment performance/Evidence on investment performance.ipynb
-!Module 1/Week 4 - Evidence on investment performance/Evidence on investment performance.slides.pdf
-!Module 2/Week 6 - Diversification and portfolio optimization/Diversification and portfolio optimization.ipynb
-!Module 2/Week 6 - Diversification and portfolio optimization/Diversification and portfolio optimization.slides.pdf
-!Module 2/Week 8 - CAPM and investment styles/CAPM and investment styles.ipynb
-!Module 2/Week 8 - CAPM and investment styles/CAPM and investment styles.slides.pdf
-!Module 2/Week 8 - CAPM and investment styles/Homework 2 example.ipynb
-!Module 2/Week 8 - CAPM and investment styles/Homework 2 example.slides.pdf
-!Module 3/Week 11 - Short sales and dollar-neutral strategies/Short sales and dollar-neutral strategies.ipynb
-!Module 3/Week 11 - Short sales and dollar-neutral strategies/Short sales and dollar-neutral strategies.slides.pdf
-!Module 3/Week 12 - Factor models/Factor models.ipynb
-!Module 3/Week 12 - Factor models/Factor models.slides.pdf
-!Module 3/Week 13 - Derivatives/Derivatives.slides.pdf
-!Module 3/Week 14 - The profitability factor/Profitability.ipynb
-!Module 3/Week 14 - The profitability factor/Profitability.slides.pdf
-# ARCHIVE_INCLUDE_END
+# Rendered HTML (slides are shared as PDF)
+*.html
+*_files/
