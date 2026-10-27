@@ -1,2 +1,8 @@
 title: Investments (FIN 323)
 description: Landing page for course repo
+
+theme: jekyll-theme-primer
+
+# Leave TeX delimiters intact for MathJax in the browser.
+kramdown:
+  math_engine: null
