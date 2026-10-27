@@ -16,5 +16,5 @@ build/
 *~
 
 # Rendered HTML (slides are shared as PDF)
-*.html
+*slides.html
 *_files/
